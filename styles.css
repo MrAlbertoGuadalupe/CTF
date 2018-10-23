@@ -1,0 +1,45 @@
+*{
+  margin: 0 auto;
+}
+
+.board {
+  height: 600px;
+  width: 1000px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+}
+.board > div {
+  height: 600px;
+  width: 1000px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.sprite {
+  background-color: red;
+  height: 10px;
+  width: 20px;
+  position: absolute;
+}
+
+.platform {
+  background-color: white;
+  position: absolute;
+  width: 100px;
+  height: 10px;
+}
+
+.logo {
+  background-image: url('background.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 400px;
+  margin: 0 auto;
+}
