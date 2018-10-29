@@ -1,23 +1,29 @@
-# Instructions for the game  
-- Try to collide into your opponent and knock them down by having the higher ground 
-- Use < > ^ keys to move
-- If you hit the ceiling, you lose a point(or die or both?)
+# Capture The Flag
+# Instructions for the game
+2 Players compete against each other
+Flag spawns in the middle of the board
+Obstacles prevent players from going directly to the flag, objects cannot be passed through.
+Players need to grab the flag by walking over its location, and then return to their base. their base will be visually indicated on the board
+Players can also steal the flag from each other
+First player to score 5 wins
+
 
 
 # Minimum Viable Product:   
-- Two characters that can be controlled Up/Left/Right with individual seperate Key Bindings(event listener) 
-- Characters are both always falling down(gravity effect)unless they are on the floor or a platform  
+- Two characters that can be controlled Up/Left/Right/Down with individual seperate Key Bindings(event listener)
 - Both characters can be controlled at the same time
-- Both characters must have their original spawn location on the floor
-- Characters have collision detection
-- There are platforms that also have collision detection and cannot be moved through, only landed on or bumped into from below
-- On a collision, the player who is higher in the Y axis is awarded a point
-- On a collision, the player who is lower in the Y axis resets to their default position
-- The first player to 7 points wins.
-- The ceiling is Lava
+- Both characters must have their original spawn location on opposite ends of the grid and equal distance from the middle(flag)
+- Characters are able to grab the flag
+- Characters are able to return the flag to the base for a point
+- Game ends when the score is 5
 
-# Tasks:
-- HTML/CSS Styling (Game container, Player 1 Score, Player 2 score)
-- Create an object/s that will represent the locations of the platforms
-- 
-- 
+# Bonuses/Post MVP
+- Players can steal the flag from each other
+- Landing Page/New Game Button
+- Audio Effects
+- Platforms move
+- Randomized flag positioning
+- Play Again Button
+- Accept Player Name Inputs
+- Players can pick their character color
+- Players can pick the score they play to

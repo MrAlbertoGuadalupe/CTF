@@ -1,45 +1,136 @@
-*{
+* {
   margin: 0 auto;
 }
-
+body {
+  background-color: black;
+}
 .board {
-  height: 600px;
-  width: 1000px;
+  height: 609px;
+  width: 950px;
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin: 0 auto;
-}
-.board > div {
-  height: 600px;
-  width: 1000px;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  margin: 0 auto;
+  border-left: solid red 20px;
+  border-right: solid blue 20px;
+  grid-column: 2;
+  color: white;
+  font-size: 75px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .sprite {
-  background-color: red;
-  height: 10px;
-  width: 20px;
+  background-image: url('red.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
   position: absolute;
+  /* border: solid red 4px; */
 }
 
 .platform {
-  background-color: white;
+  /* background-image: url('platform.jpg'); */
+  background-image: url('barrier.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
   position: absolute;
-  width: 100px;
-  height: 10px;
+  height: 50px;
+  width: 50px;
+  /* border: solid #39ff14 4px;
+  border-radius: 90%;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5); */
 }
 
 .logo {
   background-image: url('background.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 400px;
-  margin: 0 auto;
+  height: 170px;
+  width: 500px;
+}
+
+.sprite2 {
+  background-image: url('blue.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  /* border: solid blue 4px; */
+  left: 900px;
+  top: 550px;
+}
+
+.flag {
+  height: 30px;
+  width: 50px;
+  border-radius: 100%;
+  background-image: url('flag.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+  margin: 5px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+.redScore {
+  /* border: solid red 2px; */
+  font-size: 45px;
+}
+
+.blueScore {
+  /* border: solid blue 2px; */
+  font-size: 45px;
+}
+
+.holder {
+  font-family: 'Press Start 2P', cursive;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  color: white;
+}
+
+.leftStuff {
+  grid-column: 1;
+  padding: 5px;
+  margin: 5px;
+}
+.rightStuff {
+  grid-column: 3;
+  padding: 5px;
+  margin: 5px;
+}
+.windance {
+  background-image: url('redtrophy.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  /* border: solid red 4px; */
+}
+.windanceblue {
+  background-image: url('bluetrophy.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  /* border: solid red 4px; */
+}
+.resetbutton {
+  display: none;
+  height: 100px;
+  width: 100px;
 }
